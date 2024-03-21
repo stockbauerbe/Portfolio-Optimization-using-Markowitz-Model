@@ -9,13 +9,13 @@ and a reasonable level of risk. The Markowitz Model, developed by economist Harr
 ### The Two-Asset Markowitz Model
 The two-asset Markowitz Model adapts the Sharpe Ratio to determine the optimial allocation of resources between two assets in a portfolio.[^1] This is done by calculating an adjusted *mean*, *variance*, and *standard deviation* of the portfolios returns at various fund allocations, incorporating the individual assets returns mean, variance, and standard deviation. The calculations are as follows:
 
-Portfolio Mean Returns: $ (p_1 * R_1) + (p_2 * R_2) $
+Portfolio Mean Returns: $(p_1 * R_1) + (p_2 * R_2)$
 
-Portfolio Variance of Returns: $ (p_1^2 * \sigma^2_1) + (p_2^2 * \sigma^2_2) + (2*\sigma^2_1*\sigma^2_s*\sigma^2_{1,2}) $
+Portfolio Variance of Returns: $(p_1^2 * \sigma^2_1) + (p_2^2 * \sigma^2_2) + (2*\sigma^2_1*\sigma^2_s*\sigma^2_{1,2})$
 
-Portfolio Standard Deviation of Returns: $ \sqrt{Portfolio Variance of Returns} $
+Portfolio Standard Deviation of Returns: $\sqrt{Portfolio Variance of Returns}$
 
-Portfolio Sharpe Ratio: $ (Portfolio Mean Returns - R_f) / Portfolio Standard Deviation of Returns $
+Portfolio Sharpe Ratio: $(Portfolio Mean Returns - R_f) / Portfolio Standard Deviation of Returns$
 
 Where:
 
