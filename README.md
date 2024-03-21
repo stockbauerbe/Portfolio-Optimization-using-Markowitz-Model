@@ -12,14 +12,11 @@ The two-asset Markowitz Model adapts the Sharpe Ratio to determine the optimial 
 Portfolio Mean Returns
 : $$ (p_1 * R_1) + (p_2 * R_2) $$
 
-Portfolio Variance of Returns
-: $$ (p_1^2 * \sigma^2_1) + (p_2^2 * \sigma^2_2) + (2*\sigma^2_1*\sigma^2_s*\sigma^2_{1,2}) $$
+Portfolio Variance of Returns: $ (p_1^2 * \sigma^2_1) + (p_2^2 * \sigma^2_2) + (2*\sigma^2_1*\sigma^2_s*\sigma^2_{1,2}) $
 
-Portfolio Standard Deviation of Returns
-: $$ \sqrt{Portfolio Variance of Returns} $$
+Portfolio Standard Deviation of Returns: $ \sqrt{Portfolio Variance of Returns} $
 
-Portfolio Sharpe Ratio
-: $$ (Portfolio Mean Returns - R_f) / Portfolio Standard Deviation of Returns $$
+Portfolio Sharpe Ratio: $ (Portfolio Mean Returns - R_f) / Portfolio Standard Deviation of Returns $
 
 Where:
 
