@@ -1,6 +1,7 @@
-# R Script for building two-asset Markowitz Portfolio Optimization Model
+# R Script for building two-asset Markowitz Portfolio Optimization Model. To learn more about the Markowitze 
+# Portfolio Optimization Model, please see the README.md file
 
-# Libraries
+# Load Libraries
 library(tidyverse)
 library(readxl)
 library(stats)
@@ -20,7 +21,7 @@ stocks$return = (stocks$`Adj Close` - dplyr::lag(stocks$`Adj Close`, n=1)) / dpl
 
 bonds$return = (bonds$`Adj Close` - dplyr::lag(bonds$`Adj Close`, n=1)) / dplyr::lag(bonds$`Adj Close`, n=1)
 
-# Calculating vars: Mean, Variance, Standard Deviation, Sharpe Ratio
+# Calculating vars: Mean, Variance, Standard Deviation, Sharpe Ratio, Covariance, Correlation
 stocks.mean = mean(stocks$return[-1])
 bonds.mean = mean(bonds$return[-1])
 
@@ -35,7 +36,6 @@ risk.free.rate = .002
 stocks.sharpe = (stocks.mean-risk.free.rate) / stocks.stdev
 bonds.sharpe = (bonds.mean-risk.free.rate) / bonds.stdev
 
-# Calculating Additional Vars: Covariance and Correlation
 covar = cov(stocks$return[-1],bonds$return[-1])
 correl = cor(stocks$return[-1],bonds$return[-1])
 
