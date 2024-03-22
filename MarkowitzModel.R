@@ -65,7 +65,7 @@ optimization.plot = ggplot(model, aes(x = stdev*100, y = mean*100, color = sharp
   geom_vline(xintercept = sharpe.optimum.stdev*100, linetype = 2, color = 2) +
   geom_hline(yintercept = sharpe.optimum.mean*100, linetype = 2, color = 2) +
   labs(title = "Two-Asset Markowitz Portfolio Optimization Model",
-       subtitle = paste("Sharpe Ratio Maxing Portfolio: ",stock,"% VOO / ",bond,"% BLV",sep=""),
+       subtitle = paste("Sharpe Ratio Maxing Portfolio: ",stock*100,"% VOO / ",bond*100,"% BLV",sep=""),
        caption = paste("Maximized Sharpe Ratio:",sharpe.optimum,sep=" ")) +
   xlab("Risk (Variation %)") +
   ylab("Reward (Return %)") +
